@@ -74,6 +74,10 @@ address strong{font-weight:600}
 .topnav a{color:#fff;font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:17px;letter-spacing:.14em;text-transform:uppercase}
 .topnav a:hover{color:#E4DAF3;text-decoration:none}
 .topnav a[aria-current="page"]{box-shadow:inset 0 -2px 0 #fff}
+.sponsor{margin-bottom:72px;padding:40px;background:var(--tint);border-top:3px solid var(--purple);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+.sponsor p{margin:0;max-width:36em;font-size:18px;text-wrap:pretty}
+.sponsor .cta-row{margin-top:0}
+@media (max-width:760px){.sponsor{grid-template-columns:1fr;padding:28px 22px;gap:22px}}
 footer{background:var(--purple);color:#fff}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
 footer .big{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:28px;letter-spacing:.1em;text-transform:uppercase}
@@ -100,6 +104,7 @@ footer a:hover{color:#E4DAF3}
     <ul>
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="rules.html">Rules</a></li>
+      <li><a href="#sponsor">Sponsor</a></li>
       <li><a href="https://forms.cloud.microsoft/r/eL2XG2eVwC?origin=lprLink" target="_blank" rel="noopener">Register</a></li>
     </ul>
   </div>
@@ -160,9 +165,20 @@ footer a:hover{color:#E4DAF3}
       <div class="contact">
         <div class="label">Questions</div>
         <a href="mailto:phoenix-code-cup@floridapoly.edu">phoenix-code-cup@floridapoly.edu</a>
-        <div style="margin-top:8px;font-size:15px;font-weight:600"><a href="rules.html" style="display:inline;margin:0;font-size:15px;font-weight:600">Rules</a> and practice problems coming soon</div>
+        <div style="margin-top:8px;font-size:15px;font-weight:600"><a href="rules.html" style="display:inline;margin:0;font-size:15px;font-weight:600">Rules &amp; sample problem →</a></div>
         <div style="margin-top:6px"><a href="https://floridapoly.edu" target="_blank" rel="noopener" style="font-size:15px;font-weight:500;margin:0">floridapoly.edu</a></div>
       </div>
+    </div>
+  </section>
+
+  <section class="sponsor" id="sponsor">
+    <div>
+      <h2>Become a Sponsor</h2>
+      <p>Support Florida's next generation of programmers. Sponsorships help fund student lunches, awards and prizes, and show your organization's support for STEM education.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn" href="#" target="_blank" rel="noopener" style="text-decoration:none" data-placeholder="sponsor-form">Sponsor Now</a>
+      <a class="btn btn-ghost" href="img/Phoenix-Code-Cup-sponsorship.pdf" target="_blank" rel="noopener" style="text-decoration:none">Learn About Sponsorship</a>
     </div>
   </section>
 </main>
